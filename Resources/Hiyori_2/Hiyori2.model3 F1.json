@@ -18,7 +18,7 @@
 					"File": "motion/dislike.motion3.json"
 				}
 			],
-			"Hate": [
+       "Hate": [
 				{
 					"File": "motion/hate.motion3.json"
 				}
@@ -28,11 +28,11 @@
 					"File": "motion/like.motion3.json"
 				}
 			],
-			"Love": [
+     "Love": [
 				{
 					"File": "motion/love.motion3.json"
 				}
-			]
+			],
       "Idle": [
         {
           "File": "motions/Hiyori_m01.motion3.json",
