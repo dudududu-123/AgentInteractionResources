@@ -8,17 +8,38 @@
     "Pose": "Hiyori.pose3.json",
     "DisplayInfo": "Hiyori.cdi3.json",
     "Motions": {
+      "nomal":[
+        {
+          "File": "motion/nomal.motion3.json"
+        }
+      ],
+      "Dislike": [
+				{
+					"File": "motion/dislike.motion3.json"
+				}
+			],
+			"Hate": [
+				{
+					"File": "motion/hate.motion3.json"
+				}
+			],
+      "Like": [
+				{
+					"File": "motion/like.motion3.json"
+				}
+			],
+			"Love": [
+				{
+					"File": "motion/love.motion3.json"
+				}
+			]
       "Idle": [
         {
           "File": "motions/Hiyori_m01.motion3.json",
           "FadeInTime": 0.5,
           "FadeOutTime": 0.5
         },
-        {
-          "File": "motions/Hiyori_m09.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
+        
         {
           "File": "motions/Hiyori_m02.motion3.json",
           "FadeInTime": 0.5,
@@ -35,7 +56,27 @@
           "FadeOutTime": 0.5
         },
         {
-          "File": "motions/Hiyori_m11.motion3.json",
+          "File": "motions/like.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/love.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/nomal.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/dislike.motion.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/hate.motion3.json",
           "FadeInTime": 0.5,
           "FadeOutTime": 0.5
         }
@@ -116,53 +157,33 @@
           "FadeOutTime": 0.5
         },
         {
-          "File": "motions/Hiyori_m09.motion3.json",
+          "File": "motions/like.motion3.json",
           "FadeInTime": 0.5,
           "FadeOutTime": 0.5
         },
         {
-          "File": "motions/Hiyori_m10.motion3.json",
+          "File": "motions/love.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/nomal.motion3.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/dislike.motion.json",
+          "FadeInTime": 0.5,
+          "FadeOutTime": 0.5
+        },
+        {
+          "File": "motions/hate.motion3.json",
           "FadeInTime": 0.5,
           "FadeOutTime": 0.5
         }
+        
       ],
-      "Angry": [
-        {
-          "File": "motions/Hiyori_m12.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
-        {
-          "File": "motions/Hiyori_m13.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
-        {
-          "File": "motions/Hiyori_m14.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
-        {
-          "File": "motions/Hiyori_m15.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
-        {
-          "File": "motions/Hiyori_m16.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
-        {
-          "File": "motions/Hiyori_m17.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        },
-        {
-          "File": "motions/Hiyori_m11.motion3.json",
-          "FadeInTime": 0.5,
-          "FadeOutTime": 0.5
-        }
-      ]
+      
     }
   },
   "Groups": [
