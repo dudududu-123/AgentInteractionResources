@@ -9,6 +9,31 @@
     "DisplayInfo": "Hiyori.cdi3.json",
     "Expressions": [],
     "Motions": {
+      "Dislike": [
+        {
+          "File": "motion/dislike.motion3.json"
+        }
+      ],
+      "Hate": [
+        {
+          "File": "motion/hate.motion3.json"
+        }
+      ],
+      "Nomal": [
+        {
+          "File": "motion/nomal.motion3.json"
+        }
+      ],
+      "Like": [
+        {
+          "File": "motion/like.motion3.json"
+        }
+      ],
+      "Love": [
+        {
+          "File": "motion/love.motion3.json"
+        }
+      ],
       "Idle": [
         {
           "File": "motions/Hiyori_m01.motion3.json",
