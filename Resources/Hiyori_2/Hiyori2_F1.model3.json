@@ -9,9 +9,11 @@
     "DisplayInfo": "Hiyori.cdi3.json",
     "Expressions": [],
     "Motions": {
-      "qwe":[{
-           "File": "motions/qwe.json"
-      }],
+      "qwe": [
+        {
+          "File": "motions/qwe.exp3.json"
+        }
+      ],
       "Dislike": [
         {
           "File": "motions/dislike.motion3.json"
@@ -64,7 +66,7 @@
           "FadeOutTime": 0.5
         },
         {
-          "File": "motions/Hiyori_m11.motion3.json",
+          "File": "motions/Hiyori_m04.motion3.json",
           "FadeInTime": 0.5,
           "FadeOutTime": 0.5
         }
