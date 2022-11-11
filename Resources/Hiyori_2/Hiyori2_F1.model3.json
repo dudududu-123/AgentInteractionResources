@@ -9,6 +9,9 @@
     "DisplayInfo": "Hiyori.cdi3.json",
     "Expressions": [],
     "Motions": {
+      "qwe":[{
+           "File": "motions/qwe.json"
+      }],
       "Dislike": [
         {
           "File": "motions/dislike.motion3.json"
