@@ -1,0 +1,222 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "hiyori_free_t08_2.moc3",
+		"Textures": [
+			"hiyori_free_t08_2.2048/texture_00.png"
+		],
+		"Physics": "hiyori_free_t08_2.physics3.json",
+		"DisplayInfo": "hiyori_free_t08_2.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "anger11-1",
+				"File": "expressions/anger11-1.exp3.json"
+			},
+			{
+				"Name": "anger11-10",
+				"File": "expressions/anger11-10.exp3.json"
+			},
+			{
+				"Name": "anger11-11",
+				"File": "expressions/anger11-11.exp3.json"
+			},
+			{
+				"Name": "anger11-2",
+				"File": "expressions/anger11-2.exp3.json"
+			},
+			{
+				"Name": "anger11-3",
+				"File": "expressions/anger11-3.exp3.json"
+			},
+			{
+				"Name": "anger11-4",
+				"File": "expressions/anger11-4.exp3.json"
+			},
+			{
+				"Name": "anger11-5",
+				"File": "expressions/anger11-5.exp3.json"
+			},
+			{
+				"Name": "anger11-6",
+				"File": "expressions/anger11-6.exp3.json"
+			},
+			{
+				"Name": "anger11-7",
+				"File": "expressions/anger11-7.exp3.json"
+			},
+			{
+				"Name": "anger11-8",
+				"File": "expressions/anger11-8.exp3.json"
+			},
+			{
+				"Name": "anger11-9",
+				"File": "expressions/anger11-9.exp3.json"
+			},
+			{
+				"Name": "happy11-1",
+				"File": "expressions/happy11-1.exp3.json"
+			},
+			{
+				"Name": "happy11-10",
+				"File": "expressions/happy11-10.exp3.json"
+			},
+			{
+				"Name": "happy11-11",
+				"File": "expressions/happy11-11.exp3.json"
+			},
+			{
+				"Name": "happy11-2",
+				"File": "expressions/happy11-2.exp3.json"
+			},
+			{
+				"Name": "happy11-3",
+				"File": "expressions/happy11-3.exp3.json"
+			},
+			{
+				"Name": "happy11-4",
+				"File": "expressions/happy11-4.exp3.json"
+			},
+			{
+				"Name": "happy11-5",
+				"File": "expressions/happy11-5.exp3.json"
+			},
+			{
+				"Name": "happy11-6",
+				"File": "expressions/happy11-6.exp3.json"
+			},
+			{
+				"Name": "happy11-7",
+				"File": "expressions/happy11-7.exp3.json"
+			},
+			{
+				"Name": "happy11-8",
+				"File": "expressions/happy11-8.exp3.json"
+			},
+			{
+				"Name": "happy11-9",
+				"File": "expressions/happy11-9.exp3.json"
+			},
+			{
+				"Name": "nomal",
+				"File": "expressions/nomal.exp3.json"
+			}
+		],
+		"Motions": {
+			"Dislike": [
+				{
+					"File": "motion/dislike.motion3.json"
+				}
+			],
+			"Hate": [
+				{
+					"File": "motion/hate.motion3.json"
+				}
+			],
+			"Idle": [
+				{
+					"File": "motion/hiyori_m01.motion3.json"
+				},
+				{
+					"File": "motion/hiyori_m02.motion3.json"
+				},
+				{
+					"File": "motion/hiyori_m05.motion3.json"
+				}
+			],
+			"All": [
+				{
+					"File": "motion/hiyori_m03.motion3.json"
+				},
+				{
+					"File": "motion/hiyori_m04.motion3.json"
+				},
+				{
+					"File": "motion/hiyori_m06.motion3.json"
+				},
+				{
+					"File": "motion/hiyori_m07.motion3.json"
+				},
+				{
+					"File": "motion/hiyori_m08.motion3.json"
+				},
+				{
+					"File": "motion/dislike.motion3.json"
+				},
+				{
+					"File": "motion/hate.motion3.json"
+				},
+				{
+					"File": "motion/like.motion3.json"
+				},
+				{
+					"File": "motion/love.motion3.json"
+				},
+				{
+					"File": "motion/nomal.motion3.json"
+				}
+			],
+			"": [
+				{
+					"File": "motion/idling1.motion3.json"
+				},
+				{
+					"File": "motion/idling2.motion3.json"
+				},
+				{
+					"File": "motion/idling3.motion3.json"
+				},
+				{
+					"File": "motion/idling4.motion3.json"
+				},
+				{
+					"File": "motion/idling5.motion3.json"
+				},
+				{
+					"File": "motion/idling6.motion3.json"
+				},
+				{
+					"File": "motion/idling7.motion3.json"
+				},
+				{
+					"File": "motion/idling8.motion3.json"
+				},
+				{
+					"File": "motion/nomal.motion3.json"
+				}
+			],
+			"Like": [
+				{
+					"File": "motion/like.motion3.json"
+				}
+			],
+			"Love": [
+				{
+					"File": "motion/love.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": [
+		{
+			"Id": "HitArea",
+			"Name": ""
+		}
+	]
+}

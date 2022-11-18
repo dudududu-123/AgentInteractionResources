@@ -1,0 +1,72 @@
+{
+	"Type": "Live2D Expression",
+	"FadeInTime": 1,
+	"FadeOutTime": 1,
+	"Parameters": [
+		{
+			"Id": "ParamEyeRSmile",
+			"Value": 0.9,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"Value": 1,
+			"Blend": "Multiply"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"Value": 0.9,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"Value": 1,
+			"Blend": "Multiply"
+		},
+		{
+			"Id": "ParamCheek",
+			"Value": 1,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"Value": 1,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"Value": 1,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"Value": 0.5,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"Value": 0.9,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"Value": 0.2,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"Value": 0.2,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamBrowLRotation",
+			"Value": -12,
+			"Blend": "Overwrite"
+		},
+		{
+			"Id": "ParamBrowRRotation",
+			"Value": -12,
+			"Blend": "Overwrite"
+		}
+	]
+}
