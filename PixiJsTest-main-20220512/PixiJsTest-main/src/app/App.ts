@@ -37,35 +37,35 @@ type MyModelSettings = {
 
 export class App {
     private pixiCanvas: MyCanvas | null;
-    private serverURL: string;
+//     private serverURL: string;
     private serverConnect: boolean;
     private debug: boolean;
     private modelPosition: ModelPosition;
     private modelPath: string;
-    constructor(debug: boolean, serverURL: string, modelPath: string, modelPosition: ModelPosition) {
+    constructor(debug: boolean,  modelPath: string, modelPosition: ModelPosition) {
         this.pixiCanvas = null;
-        this.serverConnect = false;
-        this.serverURL = serverURL;
+//         this.serverConnect = false;
+        
         this.debug = debug;
         this.modelPosition = modelPosition;
         this.modelPath = modelPath;
     }
     mount = async () => {
-        console.log("AppマウントNoma");
+        console.log("Appマウント");
 
         //windowAudioContext構成
         window.AudioContext = window.AudioContext ?? window.webkitAudioContext;
 
         //VOICEVOXサーバーとの接続確認
-        const rpc = axios.create({ baseURL: this.serverURL, proxy: false });
-        //* まずtextを渡してsynthesis宛のパラメータを生成する、textはURLに付けるのでencodeURIで変換しておく。*/
-        this.serverConnect = await rpc
-            .post("audio_query?text=" + encodeURI("あいうえお。") + "&speaker=1")
-            .then(() => true)
-            .catch(() => false);
-        console.log("サーバーコネクト：" + this.serverConnect);
+//         const rpc = axios.create({ baseURL: this.serverURL, proxy: false });
+//         //* まずtextを渡してsynthesis宛のパラメータを生成する、textはURLに付けるのでencodeURIで変換しておく。*/
+//         this.serverConnect = await rpc
+//             .post("audio_query?text=" + encodeURI("あいうえお。") + "&speaker=1")
+//             .then(() => true)
+//             .catch(() => false);
+//         console.log("サーバーコネクト：" + this.serverConnect);
 
-        this.pixiCanvas = new MyCanvas(this.debug, this.serverConnect, this.serverURL, this.modelPath, this.modelPosition);
+        this.pixiCanvas = new MyCanvas(this.debug, this.modelPath, this.modelPosition);
         //------------------------------------------------------------pixiアプリ初期化
         this.pixiCanvas.initialize();
 
@@ -288,20 +288,39 @@ export class App {
         this.pixiCanvas?.destoroy();
         window.speechSynthesis.cancel();
     };
-
+    
+    this.change_expression = (num) => {
+                switch (num) {
+                  case -1:
+                    this.pixiCanvas?.hiyori.forceMotion("Hate");
+                    break;
+                  case 0:
+                    this.pixiCanvas?.hiyori.forceMotion("sad");
+                    setTimeout(6000);
+                    break;
+                  case 1:
+                    this.pixiCanvas?.hiyori.forceMotion("Nomal");
+                    break;
+                  case 2:
+                    this.pixiCanvas?.hiyori.forceMotion("Like");
+                    break;
+                  case 3:
+                    this.pixiCanvas?.hiyori.forceMotion("Love");
+                    break;
+                }
         ////////////////////////////////////////////////////////////////
 
        //3Dテーブルとのマージ分
-       change_face = (point: number, limit: number) => {
-        if(point<limit){
-            console.log("a_point",point);
-            console.log("a_limit",limit);
-            this.pixiCanvas?.hiyori.setExpression("angry1");
-        }
-        else{
-            console.log("n_point",point);
-            console.log("n_limit",limit);
-            this.pixiCanvas?.hiyori.setExpression("normal1");
-        }
-       }
+//        change_face = (point: number, limit: number) => {
+//         if(point<limit){
+//             console.log("a_point",point);
+//             console.log("a_limit",limit);
+//             this.pixiCanvas?.hiyori.setExpression("angry1");
+//         }
+//         else{
+//             console.log("n_point",point);
+//             console.log("n_limit",limit);
+//             this.pixiCanvas?.hiyori.setExpression("normal1");
+//         }
+//        }
 }
