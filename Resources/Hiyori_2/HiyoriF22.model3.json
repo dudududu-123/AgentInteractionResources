@@ -7,43 +7,16 @@
     "UserData": "Hiyori.userdata3.json",
     "Pose": "Hiyori.pose3.json",
     "DisplayInfo": "Hiyori.cdi3.json",
-    "Expressions": {
-      "Dislike": [
-        {
-          "File": "motion/dislike.motion3.json"
-        }
-      ],
-      "Hate": [
-        {
-          "File": "motion/hate.motion3.json"
-        }
-      ],
-      "Nomal": [
-        {
-          "File": "motion/nomal.motion3.json"
-        }
-      ],
-      "Like": [
-        {
-          "File": "motion/like.motion3.json"
-        }
-      ],
-      "Love": [
-        {
-          "File": "motion/love.motion3.json"
-        }
-      ],
-      "qwe": [
-        {
-          "File": "motion/qwe.exp3.json"
-        }
-      ],
-      "sad": [
-        {
-          "File": "motion/sad.exp3.json"
-        }
-      ]
-    },
+    "Expressions": [
+      {
+        "Name": "sad",
+        "File": "motion/sad.exp3.json"
+      },
+      {
+        "Name": "qwe",
+        "File": "motion/qwe.exp3.json"
+      }
+    ],
     "Motion": {
       "Idle": [
         {
