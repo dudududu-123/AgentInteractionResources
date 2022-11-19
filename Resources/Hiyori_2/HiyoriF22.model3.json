@@ -10,11 +10,11 @@
     "Expressions": [
       {
         "Name": "sad",
-        "File": "motion/sad.exp3.json"
+        "File": "sad.exp3.json"
       },
       {
         "Name": "qwe",
-        "File": "motion/qwe.exp3.json"
+        "File": "qwe.exp3.json"
       }
     ],
     "Motion": {
