@@ -6,36 +6,40 @@ import { App } from "./App";
 import { ModelPosition } from "./types";
 
 export default class IndexLibrary {
-    private debug: boolean;
-//     private serverURL: string;
-    private modelPath: string;
-    private modelPosition: ModelPosition;
-    private app: App | null;
-    private num: number =0;
-//     private limit: number =0;
+  private debug: boolean;
+  private serverURL: string;
+  private modelPath: string;
+  private modelPosition: ModelPosition;
+  private app: App | null;
 
-
-    constructor(debug: boolean,  modelPath: string, modelPosition: ModelPosition) {
-        this.debug = debug;
-        this.modelPosition = modelPosition;
-        this.app = null;
-        this.modelPath = modelPath;
-    }
-    onload = () => {
-        console.log("DOMLoadedAction");
-        this.app = new App(this.debug, this.serverURL, this.modelPath, this.modelPosition); //
-        console.log("ロードした");
-        this.app.mount();
-    };
-    onUnload = () => {
-        console.log("WindowLoadedAction");
-        console.log("アンロード");
-        this.app?.unmount();
-    };
-
-    App_set_point =() => {
-        this.app?.change_expression(num);
-    }
+  constructor(
+    debug: boolean,
+    serverURL: string,
+    modelPath: string,
+    modelPosition: ModelPosition
+  ) {
+    this.debug = debug;
+    this.serverURL = serverURL;
+    this.modelPosition = modelPosition;
+    this.app = null;
+    this.modelPath = modelPath;
+  }
+  onload = () => {
+    console.log("DOMLoadedAction");
+    this.app = new App(
+      this.debug,
+      this.serverURL,
+      this.modelPath,
+      this.modelPosition
+    ); //
+    console.log("ロードした");
+    this.app.mount();
+  };
+  onUnload = () => {
+    console.log("WindowLoadedAction");
+    console.log("アンロード");
+    this.app?.unmount();
+  };
 }
 
 //http://localhost:40080
